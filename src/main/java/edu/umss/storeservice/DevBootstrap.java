@@ -100,13 +100,19 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
         Item motocultor = saveItem(motocultorSubCategory, "MOT-M-3", "Motocultor yanmar 250",
                 "Motocultor útil para arado en superficies de dificil acceso, con espacios reducidos, para " +
                         "situaciones de alto esfuerzo. Arado De Mano Modelo YC80, Diesel.");
-        saveItemInstance(motocultor, false);
+        saveItemInstance(motocultor, true);
 
         // montacargaMitsubishi2T Item
         Item montacargaMitsubishi2T = saveItem(montacargaSubCategory, "MON-M-2T", "Montacarga",
                 "Hechos pensados en la industria donde la exigencia del equipo es frecuente. Komatsu BOBLE, ALTURA " +
                         "ELEVANTE 3,0 MTS");
         saveItemInstance(montacargaMitsubishi2T, false);
+
+        // motocicleta
+        Item montacargaToyota3T = saveItem(montacargaSubCategory, "MON-M-3T", "Montacarga Toyota",
+                "Hechos pensados en la industria donde la exigencia del equipo es frecuente. Komatsu BOBLE, ALTURA y fina calidad " +
+                        "ELEVANTE Toyota 3,0 MTS");
+        saveItemInstance(montacargaToyota3T, true);
 
         // Employee Employee
         Employee john = new Employee();

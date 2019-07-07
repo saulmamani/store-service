@@ -28,5 +28,18 @@ public class ItemInstanceServiceImpl extends GenericServiceImpl<ItemInstance> im
     public List<ItemInstance> findByFeature(boolean opc) {
         return repository.findByFeature(opc);
     }
+
+    //sobre escribiendo el metodo save para controlar un solo feature activo
+    @Override
+    public ItemInstance save(ItemInstance model) {
+        //cambiando todos los registros a Featured = false
+        if(model.getFeatured() == true) {
+            repository.updateFeature();
+            return super.save(model);
+        }
+        else{
+            return super.save(model);
+        }
+    }
 }
 
