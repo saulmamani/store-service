@@ -1,3 +1,4 @@
-TODO:
-Crear cliente -> usar mappedsuperclass para loa campos comunes con otras entidades
-Crear Dto faltantes
+proyecto Backend del diplomado de Desarrollo de software v3.
+
+
+Saul Mamani M.
