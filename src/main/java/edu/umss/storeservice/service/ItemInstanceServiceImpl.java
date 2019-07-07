@@ -9,6 +9,8 @@ import edu.umss.storeservice.repository.GenericRepository;
 import edu.umss.storeservice.repository.ItemInstanceRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ItemInstanceServiceImpl extends GenericServiceImpl<ItemInstance> implements ItemInstanceService {
     private final ItemInstanceRepository repository;
@@ -21,4 +23,10 @@ public class ItemInstanceServiceImpl extends GenericServiceImpl<ItemInstance> im
     protected GenericRepository<ItemInstance> getRepository() {
         return repository;
     }
+
+    @Override
+    public List<ItemInstance> findByFeature(boolean opc) {
+        return repository.findByFeature(opc);
+    }
 }
+

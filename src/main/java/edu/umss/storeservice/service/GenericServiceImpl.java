@@ -10,6 +10,7 @@ import edu.umss.storeservice.repository.GenericRepository;
 import edu.umss.storeservice.repository.specifications.GenericSpecificationsBuilder;
 import edu.umss.storeservice.utils.ImageUtils;
 import edu.umss.storeservice.utils.StringUtility;
+import org.hibernate.annotations.Where;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
